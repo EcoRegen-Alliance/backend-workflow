@@ -1,0 +1,37 @@
+{
+    "nodes": [
+        {
+            "nodeId": "algae-farm-001",
+            "batchId": "batch-2024-04",
+            "type": "Algae Farm",
+            "data": {
+                "energyUsed": "150 kWh",
+                "co2Captured": "10 tons",
+                "leakage": "0.5 tons",
+                "costPercentage": 20
+            }
+        },
+        {
+            "nodeId": "pyrolysis-001",
+            "batchId": "batch-2024-04",
+            "type": "Pyrolyzing Facility",
+            "data": {
+                "energyUsed": "500 kWh",
+                "co2Captured": "25 tons",
+                "leakage": "2 tons",
+                "costPercentage": 50
+            }
+        },
+        {
+            "nodeId": "farmer-001",
+            "batchId": "batch-2024-04",
+            "type": "Local Farmer",
+            "data": {
+                "energyUsed": "100 kWh",
+                "co2Captured": "15 tons",
+                "leakage": "1 ton",
+                "costPercentage": 30
+            }
+        }
+    ]
+}

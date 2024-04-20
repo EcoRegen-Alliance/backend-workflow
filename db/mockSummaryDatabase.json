@@ -1,0 +1,28 @@
+{
+    "batchId": "batch-2024-04",
+    "projectDescription": {
+        "summary": "This project utilizes algae, pyrolysis, and agricultural integration to sequester carbon.",
+        "sectoralScope": "Agriculture, Energy",
+        "projectType": "Biochar production and utilization",
+        "typeOfActivity": "Carbon sequestration and soil amendment",
+        "projectScale": "500 hectares",
+        "projectEligibility": "Eligible for carbon trading under local regulations",
+        "projectParticipant": {
+            "organizationName": "EcoRegen Ltd.",
+            "contactPerson": "Jane Doe",
+            "title": "Sustainability Officer",
+            "address": "123 Eco Way, Green City, EC 12345",
+            "telephone": "123-456-7890",
+            "email": "jane.doe@ecoregen.com"
+        },
+        "projectOwnership": "Community-owned",
+        "emissionsTradingPrograms": "EU ETS, Local Carbon Market",
+        "methodologiesUsed": "IPCC Guidelines for Biochar"
+    },
+    "aggregateData": {
+        "totalEnergyUsed": "750 kWh",
+        "totalCO2Captured": "50 tons",
+        "totalLeakage": "3.5 tons",
+        "totalCostPercentage": 100
+    }
+}
