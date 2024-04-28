@@ -126,7 +126,8 @@ As the system involves tokenization and sensitive data, it is crucial to impleme
 - Refine the code and add files to ensure seamless connectivity between the front end UI Dashboard repo and where necessary create a node operator folder with a nodeServices.js file to handle account data going back and forth for different node operators
 - Integrate with actual data sources (e.g., Virtual Routez) and other third parties to which financial and climate data are sent instead of using mock data, with database files created or adapted accordingly in the db folder.
 - Implement a robust error handling and logging mechanism.
-- Enhance the token distribution logic based on real-world scenarios and requirements.
+- Enhance the token distribution logic based on real-world scenarios and requir.ements.
+- Enable infinite length supply chains with each node providing data once a batch has been sequestered or an ECO creation triggered based on pre/post net zero critera being met
 - Improve the scalability and performance of the system to handle large-scale data processing.
 
 ## Code Corrections and Improvements
