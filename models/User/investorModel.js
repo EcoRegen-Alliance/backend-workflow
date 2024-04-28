@@ -1,5 +1,5 @@
 // models/investorModel.js
-const db = require('../db/mockDatabase.json');
+const db = require('../../db/mockDatabase.json');
 
 const findAllInvestors = () => {
     return db.investors || [];

@@ -1,3 +1,5 @@
+Here's the updated readme.txt file with the new information and changes highlighted:
+
 # EcoRegen Alliance Backend
 
 This repository contains the backend code for the EcoRegen Alliance project, which aims to incentivize and manage carbon sequestration efforts through the cultivation of algae and other nature-based solutions. The backend is built using Node.js and interacts with the Hedera blockchain for token minting and management.
@@ -17,6 +19,7 @@ The system mints ECO tokens representing sequestered carbon and distributes them
 The repository has the following structure:
 
 - `/controllers`: Contains controller files for handling HTTP requests and business logic.
+  - `adminController.js`: Handles admin-related operations such as listing admins and nodes.
   - `aggregatedDataController.js`: Handles submission of aggregated data to Hedera GMS.
   - `investorController.js`: Manages investor-related operations.
   - `nodeController.js`: Handles node-related operations.
@@ -33,13 +36,18 @@ The repository has the following structure:
 - `/investor`: Contains logic for investor-related services.
   - `investorServices.js`: Handles investment requests and calculates interest rates.
 - `/models`: Contains data models for interacting with the database.
-  - `investorModel.js`: Handles investor data interactions.
-  - `nodeModel.js`: Handles node data interactions.
-  - `verifierModel.js`: Handles verifier data interactions.
+  - `/User`: Contains user-related models.
+    - `adminModel.js`: Handles admin data interactions.
+    - `index.js`: Exports all user models.
+    - `investorModel.js`: Handles investor data interactions.
+    - `nodeModel.js`: Handles node data interactions.
+    - `verifierModel.js`: Handles verifier data interactions.
 - `/routes`: Contains route files for handling API endpoints.
+  - `adminRoutes.js`: Defines routes for admin-related operations.
   - `aggregatedDataRoutes.js`: Defines routes for aggregated data operations.
   - `environmentRoutes.js`: Defines routes for fetching global net zero status.
   - `investorRoutes.js`: Defines routes for investor-specific operations.
+  - `nodeRegistrationRoutes.js`: Defines routes for node registration.
   - `nodeRoutes.js`: Defines routes for node-specific operations.
   - `verifierRoutes.js`: Defines routes for verifier-specific operations.
 - `/utils`: Contains utility files for various purposes.
@@ -50,6 +58,18 @@ The repository has the following structure:
 - `/verifier`: Contains logic for verifier-related services.
   - `verifierService.js`: Handles data verification and verifier account totals.
 - `app.js`: The main application file that configures the server and initializes the necessary components.
+
+## Changes and Updates
+
+- Added new routes in `routes/adminRoutes.js` for admin-related operations, such as listing admins and nodes.
+- Introduced `routes/nodeRegistrationRoutes.js` for handling node registration routes.
+- Restructured the `models` directory to have a `User` subdirectory containing user-related models:
+  - Added `models/User/adminModel.js` for handling admin data interactions.
+  - Added `models/User/index.js` to export all user models.
+  - Moved `investorModel.js`, `nodeModel.js`, and `verifierModel.js` to the `User` subdirectory.
+- Updated `controllers/adminController.js` to include functions for listing admins, adding admins, and listing nodes.
+- Modified `controllers/nodeController.js` to include functions for registering nodes and submitting node data.
+- Updated `db/mockDatabase.json` to include sample data for nodes and registrations.
 
 ## Logic Flow and Interactions
 
@@ -79,6 +99,9 @@ The repository has the following structure:
    - The `environmentalPolicy.js` implements the dynamic token distribution logic based on the global net zero status.
    - The `unDataService.js` fetches the global net zero status from the United Nations API.
    - The `environmentRoutes.js` provides an endpoint to fetch the global net zero status.
+
+7. Admin Operations:
+   - Admins can interact with the system via the `adminRoutes.js` and `adminController.js` to perform administrative tasks such as listing admins and nodes.
 
 ## Integration with Frontend Dashboard
 
@@ -154,12 +177,10 @@ Contributions to the project are welcome. If you find any issues or have suggest
 
 We are grateful to Hedera, the Hashgraph Association, and our contributors for guiding us in developing this project.
 
+## Contact Information
 
-## Contact information
-
-You can find out more about this project at https://github.com/EcoRegen-Alliance and also our website at https://www.ecoregen.earth/ and sign up to stay in touch and be invited to join our teams.
+You can find out more about this project at [https://github.com/EcoRegen-Alliance](https://github.com/EcoRegen-Alliance) and also our website at [https://www.ecoregen.earth/](https://www.ecoregen.earth/) and sign up to stay in touch and be invited to join our teams.
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-

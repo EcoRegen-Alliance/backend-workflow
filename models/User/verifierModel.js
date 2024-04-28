@@ -1,5 +1,5 @@
 // models/verifierModel.js
-const db = require('../db/mockDatabase.json');
+const db = require('../../db/mockDatabase.json');
 
 const findAllVerifiers = () => {
     return db.verifiers || [];

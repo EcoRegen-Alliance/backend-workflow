@@ -1,5 +1,5 @@
 // controllers/verifierController.js
-const verifierModel = require('../models/verifierModel');
+const verifierModel = require('../models/User/verifierModel');
 
 const listVerifiers = (req, res) => {
     res.json(verifierModel.findAllVerifiers());
