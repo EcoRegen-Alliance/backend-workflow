@@ -127,7 +127,7 @@ As the system involves tokenization and sensitive data, it is crucial to impleme
 - Enhance the token distribution logic based on real-world scenarios and requir.ements.
 - Enable infinite length supply chains with each node providing data once a batch has been sequestered or an ECO creation triggered based on pre/post net zero critera being met.
 - Improve the scalability and performance of the system to handle large-scale data processing.
-- Layer in zero knowledge proof and other measures to enhance security and data sovereignty of users and participant in the ecosystem (see next section).
+- Layer in zero knowledge proof and other measures to enhance security and data sovereignty of users and participants in the ecosystem (see next section).
 
 ## Implementing Privacy-Preserving Data Handling
 
